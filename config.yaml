@@ -1,0 +1,11 @@
+options:
+  gateway4:
+    type: string
+    default: ""
+    description: |
+      The default gateway for all traffic
+  policyroutes:
+    type: string
+    default: ""
+    description: |
+      Space separated list of gateways for which to apply policy routing

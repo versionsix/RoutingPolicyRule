@@ -1,0 +1,14 @@
+name: routingpolicyrule
+summary: Setup an additional route with policy routing
+maintainer: xenefix <xenefix@protonmail.com>
+description: ''
+subordinate: true
+display-name: RoutingPolicyRule
+tags:
+  - misc
+requires:
+  juju-info:
+    interface: juju-info
+    scope: container
+series:
+  - bionic

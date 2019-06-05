@@ -1,0 +1,7 @@
+includes: 
+  - 'layer:basic'
+repo: https://github.com/xenefix/RoutingPolicyRule.git
+options:
+  basic:
+    python_packages: ['netaddr', 'ruamel.yaml']
+    use_venv: true
