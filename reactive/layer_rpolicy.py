@@ -6,15 +6,12 @@ from charmhelpers.core.host import mkdir
 from charmhelpers.fetch import get_upstream_version
 from charms.reactive import set_flag, when, when_not
 from netaddr import IPAddress, IPNetwork
-from ruamel import yaml
-
-yaml = yaml.YAML()
+import yaml
 
 @when('config.set.policyroutes')
 def set_message_policy():
     policyRoutes = config('policyroutes')
     table = 101
-    yaml.preserve_quotes = True
     try:
         with open('/etc/netplan/99-juju.yaml') as fp:
             data = yaml.load(fp)
