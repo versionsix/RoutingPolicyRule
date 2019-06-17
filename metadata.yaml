@@ -10,9 +10,5 @@ requires:
   juju-info:
     interface: juju-info
     scope: container
-provides:
-  juju-info:
-    interface: juju-info
-    scope: container
 series:
   - bionic
