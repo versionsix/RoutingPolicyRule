@@ -8,7 +8,7 @@ from charms.reactive import set_flag, when, when_not
 from netaddr import IPAddress, IPNetwork
 import yaml
 
-@when('config.set.policyroutes')
+@when('config.changed.policyroutes')
 def set_message_policy():
     policyRoutes = config('policyroutes')
     table = 101
